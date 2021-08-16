@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 //   selector: 'app-server',
 //   template: '<app-client></app-client>'
 // })
-export class ServerComponent {}
+export class ServerComponent {
+  serverId: number = 29;
+  serverStatus: string = 'offline';
+  getServerStatus (){
+    return this.serverStatus;
+  }
+}
