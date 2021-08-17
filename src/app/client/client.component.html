@@ -1,4 +1,15 @@
-<h3>This is Client Component in servercomponent.ts</h3>
+<h3>This is Client Component</h3>
+<label>Server name</label>
+<!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)"> -->
+<input type="text" [(ngModel)]="serverName">
+<hr>
+<p>{{ serverName }}</p>
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
+<hr>
+<!-- <p>{{ allowNewServer }}</p> --> This String Interpolation
+<p [innerText]="allowNewServer"></p><!-- This is Property Binding -->
+<p>{{ serverCreationStatus }}</p>
+
 <pre>
 <h1>To create a new/custom component</h1>
 Steps

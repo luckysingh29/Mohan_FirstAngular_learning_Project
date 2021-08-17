@@ -1,2 +1,8 @@
 <h3> Yes, this task is completed sucessfully..!!
 </h3>
+<h1>data Binding Asisgnment</h1>
+<input type="text" [(ngModel)]="userName" (input)="validateUserName($event)">
+<label> {{ userName }} </label>
+<hr>
+<!-- <button class="btn btn-primary" [disabled]="!enableButton" (click)="restInput()">Rest Input</button> -->
+<button class="btn btn-primary" [disabled]="userName === '' " (click)="userName = ''">Rest Input</button>

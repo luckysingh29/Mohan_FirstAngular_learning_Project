@@ -7,9 +7,10 @@ import { ServerComponent } from './server/server.component';
 import { ClientComponent } from './client/client.component';
 import { SuccessalertComponent } from './successalert/successalert.component';
 import { WarningComponent } from './warning/warning.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule],
   declarations: [
     AppComponent,
     HelloComponent,
