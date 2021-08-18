@@ -12,4 +12,6 @@ import { Component } from '@angular/core';
     `
   ]
 })
-export class WarningComponent {}
+export class WarningComponent {
+ // servers = ['Server1', 'Server2', 'Server3'];
+}

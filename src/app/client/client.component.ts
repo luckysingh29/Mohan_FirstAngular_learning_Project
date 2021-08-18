@@ -12,6 +12,7 @@ export class ClientComponent {
   serverName = 'MOhan';
   serverCreationStatus = 'Server was not created Yet.';
   serverCreated = false;
+  servers = ['Server1', 'server2'];
   constructor() {
     setTimeout(() => {
       this.allowNewServer = true;
@@ -20,6 +21,7 @@ export class ClientComponent {
 
   onCreateServer() {
     this.serverCreated = true;
+    this.servers.push(this.serverName);
     this.serverCreationStatus = 'Server is Created.' + this.serverName;
   }
 
