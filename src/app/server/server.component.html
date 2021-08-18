@@ -1,5 +1,6 @@
 <p>The Server Component</p>
-<p [ngStyle]="{backgroundColor : getColor()}">
+<p [ngStyle]="{backgroundColor : getColor()}"
+    [ngClass]="{online:serverStatus === 'online'}">
   The server ID is <span>{{ serverId }} </span>and status is <span>
     {{ serverStatus}}</span>
 </p>
